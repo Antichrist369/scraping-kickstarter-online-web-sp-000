@@ -14,10 +14,9 @@ def create_project_hash
     
     projects[title.to_sym] = { 
     
-   :image_link => project.css("div.project-thumbnauil a img").attribute("src").value
-   project.css("p.bbcard_blurb").text
-   project.css("ul.project-meta span.location-name").text 
-   project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i 
+     :image_link => project.css("div.project-thumbnauil a img").attribute("src").value
+     :description => project.css("p.bbcard_blurb").text
+     :location =>project.css("ul.project-meta span.location-name").text 
     }
   end 
   
