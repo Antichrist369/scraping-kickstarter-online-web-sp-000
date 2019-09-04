@@ -14,7 +14,7 @@ def create_project_hash
     
     projects[title.to_sym] = {} 
     
-    
+   :image_link => project.css("div.project-thumbnauil a img").attribute("src").value
     
   end 
   
