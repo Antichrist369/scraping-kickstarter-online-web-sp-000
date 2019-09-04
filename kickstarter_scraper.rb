@@ -13,3 +13,5 @@ create_project_hash
 #title: project.css("h2.bbcard_name strong a").text
 #project.css("div.project-thumbnauil a img").attribute("src").value 
 #description: project.css("p.bbcard_blurb").text
+#location: project.css("ul.project-meta span.location-name").text 
+#
